@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import Post
+from .models import Yazi
 
 class PostForm(forms.ModelForm):
 
     class Meta:
-        model = Post
+        model = Yazi
         fields = ('title', 'text',)
