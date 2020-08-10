@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Yazi
+from .models import Yazı
 
-admin.site.register(Yazi)
+admin.site.register(Yazı)
 
 # Register your models here.

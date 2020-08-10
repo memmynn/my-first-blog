@@ -23,10 +23,10 @@
           gtag('js', new Date());
           gtag('config', 'UA-170199191-1');
         </script>
-        <meta name="description" content="Edebiyat, yeraltı edebiyatı, kısa öykü, korku, kurgu, hikaye bloğu." />
+        <meta name="description" content="Edebiyat, yeraltı edebiyatı, kısa öykü, korku, kurgu, hikaye blog." />
         <meta name="yandex-verification" content="ce61d5d25eb696c1" />
         <meta name="msvalidate.01" content="A50C2691B05838470684B1930A5B0567" />
-        <title>Karya'dan Yazılar</title>
+        <title>Dut yaprağı hüznünde, mezuniyet haftası burukluğunda...</title>
         <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -36,19 +36,22 @@
     </head>
     <body>
         <div class="page-header">
-
         <h1><a href="http://www.karyadanyazilar.com/">Karya'dan Yazılar</a></h1>
         </div>
         <div class="content container">
             <div class="row">
                 <div class="col-md-8">
+                    {% block content %}
+
                     <div class="yazi">
                     <p>{{ yazilar.yazi|linebreaks }}</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <div>
+        <h2><a href="{% url 'yaz' %}"</a>Yaz</h2>
+        </div>
+        {% endblock %}
     </body>
 </html>

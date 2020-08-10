@@ -1,9 +1,9 @@
 from django import forms
 
-from .models import Yazi
+from .models import Yazı
 
-class PostForm(forms.ModelForm):
 
+class YazıForm(forms.ModelForm):
     class Meta:
-        model = Yazi
+        model = Yazı
         fields = ('yazi',)

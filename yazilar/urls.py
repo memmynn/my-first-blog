@@ -2,5 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.yazi, name='yazi'),
+    path('', views.YazıView.as_view(), name='yazi'),
+    path('yaz/', views.yazdır, name='yaz'),
 ]
