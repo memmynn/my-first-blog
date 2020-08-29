@@ -10,5 +10,3 @@ class Yazı(models.Model):
     def publish(self):
         self.save()
 
-    def __str__(self):
-        return str(self.yazi.split('\n', 1)[0])
