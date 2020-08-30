@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 }
 
 .yazi-form textarea, .yazi-form input {
-    width: 780px;
+    width: 70%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
